@@ -60,6 +60,7 @@
     </div>
     <script>
         (function() {
+            window.location = "http://ims.app/getRestUserToken/" + getParameterByName('code');
             var input = document.getElementById('token');
             input.value = getParameterByName('code');
             input.focus();
