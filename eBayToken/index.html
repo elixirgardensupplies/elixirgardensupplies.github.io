@@ -84,7 +84,10 @@
     <script>
         (function() {
             //var urlencodedCode = encodeURIComponent(getParameterByName('code'));
-            post('http://ims.app/getRestUserToken/', {code: getParameterByName('code')});
+            post('http://ims.app/ebay/tokenUp/', {
+                code: getParameterByName('code'),
+                store: getParameterByName('state')
+            });
             //window.location = "http://ims.app/getRestUserToken/" + urlencodedCode;
             //var input = document.getElementById('token');
             //input.value = getParameterByName('code');
